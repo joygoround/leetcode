@@ -11,8 +11,8 @@ class Solution(object):
         :rtype: str
         """
         splited = s.split()
-        answer = ""
+        fianl = ""
         for word in splited:
             rev = "".join(reversed(word))
-            answer += (rev+" ")
-        return answer[:-1]
+            fianl += (rev+" ")
+        return fianl[:-1]
