@@ -17,6 +17,5 @@ class Solution:
 
 
 # to go into the while loop, set keys with start room
-# in the loop, visit rooms, add new gathered key in the the queue and
-# add visted rooms to visited, and move to new room with new key
+# in the loop, visit rooms, add new gathered key in the the queue and add visted rooms to visited, and move to new room with new key
 # if the room is already visited, directly move to next room with new key
