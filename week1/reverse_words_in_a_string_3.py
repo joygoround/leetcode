@@ -10,9 +10,15 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        splited = s.split()
         fianl = ""
-        for word in splited:
+        for word in s.split():
             rev = "".join(reversed(word))
             fianl += (rev+" ")
         return fianl[:-1]
+
+
+"""
+reversed(word) == word[::-1]
+keep the code simple, do not use extra variable when it's not needed
+
+"""

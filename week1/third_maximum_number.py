@@ -7,19 +7,21 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        first = removeMax(nums)
-        second = removeMax(first)
+        first = remove_max(nums)
+        second = remove_max(first)
         return max(nums) if len(second) == 0 else max(second)
 
 
-def removeMax(list):
-    if len(list) == 0:
+def remove_max(nums):
+    if len(nums) == 0:
         return []
-    maxnum = max(list)
+    max_num = max(nums)
     removed = []
-    for ele in list:
-        if ele != maxnum:
+    for ele in nums:
+        if ele != max_num:
             removed.append(ele)
-        else:
-            pass
     return removed
+ """
+ no need to use else if statement is pass
+ nit : follow function naming name_func
+ """
